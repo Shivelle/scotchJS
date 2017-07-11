@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body { padding: 30px; }
+  </style>
+</head>
+<body>
+
+		<div class="jumbotron text-center">
+
+			<button type="button" class="btn btn-success" onclick="saySomething('happy, happy, happy')">
+				The nicest button ever!
+			</button>
+
+			<button type="button" class="btn btn-danger" onclick="saySomething('angry, angry, angry')">
+				Angry Button! Don't push!
+			</button>
+
+		</div>
+
+  <!-- 🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥 -->
+  <script>
+
+  	function saySomething(message = 'goodbye', whisper = false) {
+  			if (whisper) {
+  				console.log(`%c${message}`, 'font-size: 8px'); 
+  			} else {
+  				console.log(message); 
+  			}
+  	}
+
+  	saySomething('hello', true); 
+
+
+  	saySomething('my name is sarah', true); 
+
+
+  	saySomething(); 
+
+/*  function squared(a) {
+  		return a * a; 
+  	}
+
+  	const newSquared = squared(3); 
+  	console.log(newSquared); */
+
+
+  	// 'advanced' with ES6 syntax
+  	const squared = (a) => {
+  		return a * a; 
+  	}
+
+  	console.log(squared(4)); 
+
+  	const otherSquared = squared; 
+
+
+
+  			// hoisting!
+  			  // => moving functions to the top of an element 
+  			  // => only works with function declarations without assigning them to a variable
+
+  			punch(); 
+
+  			function punch() {
+  				console.log('punch!!'); 
+  			}
+
+  </script>
+</body>
+</html>
