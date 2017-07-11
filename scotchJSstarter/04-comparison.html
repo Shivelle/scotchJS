@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body { padding: 30px; }
+  </style>
+</head>
+<body>
+
+
+  </div>
+
+  <!-- 🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥 -->
+  <script>
+
+  // string comparison
+    const original = 'shivelle'; 
+    const clone = 'SHIVELLE'; 
+
+    console.groupCollapsed('String'); 
+      console.log(original == 'shivelle'); // true
+      console.log(original == clone); // false
+      console.log(original == clone.toLowerCase()); // true
+    console.groupEnd(); 
+
+  // number comparison
+    const num1 = 10; 
+    const num2 = '10'; 
+
+    console.groupCollapsed('Numbers'); 
+      console.log(num1 == num2); // true due to js cohersion
+      console.log(num1 === num2); // false -> no cohersion
+      console.log(num1 != num2); // false
+      console.log(num1 !== num2); // true
+    console.groupEnd(); 
+
+
+  // boolean comparison
+    let what; // undefined
+    let thing = null; 
+
+    console.groupCollapsed('Booleans'); 
+      console.log(Boolean(original)); // true cause it has a value // empty tring = false -> truthy/falsy
+      console.log(Boolean(what)); // false cause undefined
+      console.log(Boolean(thing)); // false because null
+      console.log(Boolean(num1)); // true -> has a value
+      console.log(Boolean({})); // true because empty objects are always true
+      console.log(Boolean([])); // true because empty arrays are always true
+    console.groupEnd(); 
+
+  // array and opject comparison
+    const firstArr = [1, 2, 3]; 
+    const secondArr = [1, 2, 3]; 
+    const firstObj = {color: 'red' }; 
+    const secondObj = {color: 'red' }; 
+
+    console.groupCollapsed('Booleans');
+      // always false! 
+      consolelog(firstArr == secondArr); // false
+      consolelog(firstArr === secondArr); // false
+      consolelog(firstObj == secondObj); // false
+      consolelog(firstObj === secondObj); // false
+    console.groupEnd(); 
+
+  // and-or comparison
+
+
+    console.groupCollapsed('And Or'); 
+      console.log(Boolean('blah') && Boolean('thing')); // true because both are true
+      console.log(Boolean('blah') && Boolean('')); // false because empty string = false
+      console.log(Boolean('blah') || Boolean('')); // true because only one has to be true
+      console.log(Boolean('') || Boolean('')); // false because both are false
+    console.groupEnd(); 
+
+
+
+
+  </script>
+</body>
+</html>
