@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body { padding: 30px 200px; }
+  </style>
+</head>
+<body>
+
+
+<div class="dogs-list"></div>
+
+  <!-- 🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥 -->
+
+  <script>
+  // no semicolons needed after loops 
+
+  /*
+  const name     = prompt('What is your name?'); 
+  const username = 'shivelle'; 
+  */
+
+  // if
+/*  if (name == 'sarah' || username = 'shivelle') {
+    alert('Hi, Missy!'); 
+  } else if (name == 'ruby') {
+    console.log('Hi, Flausch!'); 
+  } else {
+    console.log('I don\'t know you'); 
+  }*/
+
+  // for loop
+  const dogsList = document.querySelector('.dogs-list'); 
+  const dogs     =[
+      { name: 'Ruby', type: 'Retriever'},
+      { name: 'Bruce', type: 'Chihuahua'}, 
+      { name: 'Chance', type: 'Bernese'}
+    ]; 
+
+/*     for (let i = 0; i < dogs.length; i++) {
+       // grab the dog
+       const dog         = dogs[i];
+       const dogData     = document.createElement('div');
+       dogData.classList.add('jumbotron', 'text-center');
+       dogData.innerText = `${dog.name} is a ${dog.type}.`;
+       dogsList.appendChild(dogData);
+     }*/
+
+  // while loop
+//  let i = 0; 
+
+/*  while (i < dogs.length) {
+       // grab the dog
+       const dog         = dogs[i];
+       const dogData     = document.createElement('div');
+       dogData.classList.add('jumbotron', 'text-center');
+       dogData.innerText = `${dog.name} is a ${dog.type}.`;
+       dogsList.appendChild(dogData);
+       i++; 
+  }*/
+
+  // do while loop
+/*  do {
+       // grab the dog
+       const dog         = dogs[i];
+       const dogData     = document.createElement('div');
+       dogData.classList.add('jumbotron', 'text-center');
+       dogData.innerText = `${dog.name} is a ${dog.type}.`;
+       dogsList.appendChild(dogData);
+       i++; 
+  } while (i < dogs.length); */
+
+
+/* ======= DO THIS ====== */
+  // for...of iterator
+
+  for (let dog of dogs) {
+      // grab the dog
+      const dogData     = document.createElement('div');
+      dogData.classList.add('jumbotron', 'text-center');
+      dogData.innerText = `${dog.name} is a ${dog.type}.`;
+      dogsList.appendChild(dogData);
+  }
+
+
+  </script>
+</body>
+</html>
