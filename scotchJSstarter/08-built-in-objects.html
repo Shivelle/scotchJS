@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with JavaScript</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    body { padding: 30px; }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- 🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥 -->
+  <script>
+  const first = 'this is a string'; 
+  const second = String('this is a string'); 
+  // console.log('this is a string'.toUppercase()); 
+  // console.log(String('this is a string').toUppercase()); 
+
+  // console.log( first === second ); 
+
+  console.groupCollapsed('Primitives vs Objects'); 
+  	console.log( first === second );
+  	console.log(
+  		typeof first, // string
+  		typeof String('this is a string'), // string
+  		typeof new String() // object
+  	); 
+  console.groupEnd(); 
+
+  // strings 
+  const sentence = 'this is my sentence'; 
+  console.groupCollapsed('String');
+  	console.log(first.toUppercase()); // THIS IS A STRING
+  	console.log(second.toLowercase()); // this is a string
+  	console.log(sentence.startsWith('this is')); // true
+  	console.log('beer '.repeat(20)); // beer beer beer beer beer..
+  	console.log('look at me goo      ').trim(); // look at me goo (without spaces)
+  console.groupEnd(); 		  
+
+
+  // numbers and math
+  console.groupCollapsed('Numbers & Math'); 
+  	console.log(1..toString()); // two dots avoiding decimal assumption
+  	console.log((1).toString()); // same thing
+  	console.log(Number.isInteger(5)); // true
+  	console.log(Number.isInteger(5.43)); // false (no integer/decimal)
+  	console.log((1.59987987).toFixed(2)); // 1.59
+  	console.log(50
+  		Math.random().toFixed(2), // 0.
+  		Math.ceil(1.56), // 2
+  		Math.floor(6.3) // 6
+  	); 
+  console.groupEnd(); 
+
+
+  // Arrays
+  const myArr = ['sarah', 'ruby', 'michi']; 
+  console.group('Arrays'); 
+  	console.log(myArr.length); // 3
+  	console.log(myArr.join('-')); // sarah-ruby-michi
+  	console.log(myArr.push('herbert'), myArr); // ['sarah', 'ruby', 'michi', 'herbert']
+  	console.log(myArr.pop(), myArr); // ['sarah', 'ruby', 'michi']
+
+  	myArr.forEach(function(user) {
+  		console.los(user); 
+  	}); 
+  		// same as
+  		myArr.forEach((user) => console.log(user)); 
+  		
+  console.groupEnd(); 
+  </script>
+
+
+
+</body>
+</html>
