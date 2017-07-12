@@ -1,0 +1,33 @@
+body {
+	background-image: url('iceCream.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {
+	margin: 6em ;
+	background: #fff;
+	padding: 2em 5em;
+	box-shadow: 2px 3px 6px 0px  rgba(0, 0, 0, 0.29);
+}
+
+h3 {
+	text-align: center;
+	padding-bottom: 1.5em;
+	color: #64A6BD;
+}
+
+.text-giant {
+	font-size: 30px;
+	color: #64A6BD;
+}
+
+.quantity-label {
+	background: #64A6BD;
+	color: #fff;
+}
+
+.slider-action {
+	background: red;
+}
