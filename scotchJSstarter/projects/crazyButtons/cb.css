@@ -1,0 +1,44 @@
+body {
+	padding: 50px;
+}
+
+
+.btn-crazy {
+	position: absolute;
+	top: 30px;
+	left: 35%;
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	text-align: center;
+	transition: 0.4s ease all;
+}
+
+.meh {
+	background: #F18805;
+	border: 1px solid #F18805;
+}
+
+.smile {
+	background: #EFCA08;
+	border: 1px solid #EFCA08;
+}
+
+.frowm {
+	background: #66D1EE;
+	border: 1px solid #66D1EE;
+}
+
+.bomb {
+	background: #A40606;
+	border: 1px solid #A40606;
+}
+
+.cloud {
+	background: #48B8D0;
+	border: 1px solid #48B8D0;
+}
+
+i {
+	color: #fff;
+}
