@@ -15,7 +15,7 @@ body {
 	margin: 8em auto;
 	background: #fff;
 	padding: 0;
-	max-width: 300px;
+	max-width: 400px;
 	box-shadow: 2px 3px 6px 0px  rgba(0, 0, 0, 0.29);
 	border-radius: 0;
 }
@@ -33,12 +33,12 @@ h3 {
 	background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
-	font-size: 2em;
+	font-size: 3em;
 }
 
 
 .text-giant {
-	font-size: 30px;
+	font-size: 48px;
 	color: #3D0B37;
 }
 
@@ -46,8 +46,8 @@ h3 {
 	position: absolute;
 	background: #A7C088;
 	color: #fff;
-	left: 20%;
-	bottom: 51%;
+	left: 15%;
+	bottom: 57%;
 	border: none;
 	border-radius: 0;
 }
@@ -66,17 +66,11 @@ i {
  	right: 0; 
  	top: -25px;
 	margin: 0 auto;
-	width: 300px; /* Need a specific value to work */
+	width: 400px; /* Need a specific value to work */
 }
 
 .subtitle p {
 	text-align: center;
 	color: #878787;
-	font-size: 16px;
-}
-
-h3 i {
-	color: #fff;
-	padding-left: 18px;
-	padding-right: 18px;
+	font-size: 22px;
 }
