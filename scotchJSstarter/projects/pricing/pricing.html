@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="pricing.css">
 </head>
 <body>
@@ -13,29 +14,38 @@
 
 <div class="container">
 
-	<div class="jumbotron">
-		<h3>How much does ice cream cost?</h3>
+	<div class="calc">
+		<h3>Ice Cream Cost</h3>
+		<div class="calc-content">
 
-		<form>
+			<form>
 
-			<div class="form-group">
-				<label for="price">Price</label>
-				<input type="text" name="price" class="form-control" value="3">
-			</div><!-- /.form-group -->
+				<div class="form-group">
+					<label for="price">
+						<i class="icon ion-social-euro"></i> | 
+						<i class="icon ion-icecream"></i>
+					</label>
+					<input type="text" name="price" class="form-control" value="3">
+				</div><!-- /.form-group -->
 
-			<div class="form-group">
-				<label for="quantity">
-				Quantity
-				<span class="label label-primary quantity-label">1</span>
-				</label>
-				<input type="range" name="quantity" class="form-control" value="1" min="1" max="5" step="1">
-			</div><!-- /.form-group -->
+				<div class="form-group">
+					<label for="quantity">
+					<i class="icon ion-plus-round"></i>
+					<i class="icon ion-plus-round"></i>
+					<span class="label label-primary quantity-label">1</span>
+					</label>
+					<input type="range" name="quantity" class="form-control" value="1" min="1" max="5" step="1">
+				</div><!-- /.form-group -->
 
-		</form>
+			</form>
 
-		<div class="text-right text-giant total"></div><!-- /.text-giant -->
+			<div class="text-right text-giant total"></div><!-- /.text-giant -->
+		</div><!-- /.calc-content -->
+	</div><!-- /.calc -->			
 
-	</div><!-- /.jumbotron -->
+
+
+
 
 </div><!-- /.container -->
 
