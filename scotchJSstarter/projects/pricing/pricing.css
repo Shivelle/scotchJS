@@ -1,5 +1,5 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container {
@@ -12,38 +12,41 @@ body {
 }
 
 .calc {
-	margin: 6em auto;
+	margin: 8em auto;
 	background: #fff;
 	padding: 0;
-	max-width: 400px;
+	max-width: 300px;
 	box-shadow: 2px 3px 6px 0px  rgba(0, 0, 0, 0.29);
 	border-radius: 0;
 }
 
 .calc-content {
-	padding: 2em;
+	padding: 1.5em 2em 2em 2em;
 	position: relative;
 }
 
 h3 {
 	text-align: center;
-	padding: .5em;
+	padding: .4em;
 	margin-bottom: 1.5em;
-	background: #A8C256;
+	background: #76b852;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
+	font-size: 2em;
 }
 
 
 .text-giant {
 	font-size: 30px;
-	color: #CD667A;
+	color: #3D0B37;
 }
 
 .quantity-label {
 	position: absolute;
 	background: #A7C088;
 	color: #fff;
-	left: 15%;
+	left: 20%;
 	bottom: 51%;
 	border: none;
 	border-radius: 0;
@@ -51,4 +54,29 @@ h3 {
 
 .slider-action {
 	background: red;
+}
+
+i {
+	color: #3D0B37;
+}
+
+.subtitle {
+ 	position: absolute; 
+	left: 0; 
+ 	right: 0; 
+ 	top: -25px;
+	margin: 0 auto;
+	width: 300px; /* Need a specific value to work */
+}
+
+.subtitle p {
+	text-align: center;
+	color: #878787;
+	font-size: 16px;
+}
+
+h3 i {
+	color: #fff;
+	padding-left: 18px;
+	padding-right: 18px;
 }
