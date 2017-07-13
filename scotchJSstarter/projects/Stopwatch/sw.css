@@ -1,0 +1,71 @@
+body {
+	background-image: url('https://static.pexels.com/photos/272977/pexels-photo-272977.jpeg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	margin-top: 30vh;
+}
+
+.btn {
+	margin: 3px;
+	font-size: 20px;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.btn-link {
+	color: #fff;
+	background: #0B5563;
+	margin: 2px auto;
+	width: 77px;
+	height: 48px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	transition: all .3s ease;
+}
+
+.btn-link:focus, .btn-link:hover {
+	text-decoration: none;
+	background: #4D838D;
+	color: #fff;
+	border: 1px solid #4D838D;
+}
+
+.btn-danger {
+	background: #F26419;
+	border: 1px solid #F26419; 
+	transition: all .3s ease;
+}
+
+.btn-danger:focus, .btn-danger:hover {
+	background: #F48042;
+	border: 1px solid #F48042;
+}
+
+.btn-success {
+	background: #99C24D;
+	border: 1px solid #99C24D;
+}
+
+.btn-success:focus, .btn-success:hover {
+	background: #B4D27D;
+	border: 1px solid #B4D27D;
+}
+
+
+.timer {
+	font-size: 8em;
+	color: #fff;
+}
+
+.btn-lg {
+	border-radius: 0;
+}
