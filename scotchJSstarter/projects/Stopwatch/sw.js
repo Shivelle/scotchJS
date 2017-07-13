@@ -38,7 +38,7 @@ function incrementTimer() {
 		timerTime++; 
 		
 		const numOfHours = Math.floor( timerTime / 3600); 
-		const numOfMinutes = Math.floor(timerTime / 60); 
+		const numOfMinutes = Math.floor((timerTime / 60)) % 60; 
 		const numOfSeconds = timerTime % 60; 
 
 		hours.innerText = pad(numOfHours); 
