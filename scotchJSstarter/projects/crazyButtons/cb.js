@@ -15,8 +15,24 @@ function goCrazy(e) {
 	this.style.left = offsetLeft + 'px'; 
 }
 
-document.body.style
+
+function randomize () {
+	for (i = 0; i < crazyButtons.length; i++) {
+		const button = crazyButtons[i]; 
+		// get a random number for the left offset
+		const offsetLeft = Math.random() * (window.innerWidth - button.clientWidth);
+		// get a rbuttonm number for top offset 
+		const offsetTop = Math.random() * (window.innerWidth - button.clientHeight); 
+
+
+		// apply those number to the button	
+		button.style.top = offsetTop + 'px'; 
+		button.style.left = offsetLeft + 'px'; 
+	}	
+}
+
 
 // add event listeners
 crazyButtons.forEach(button => button.addEventListener('mouseenter', goCrazy)); 
+crazyButtons.forEach(button => document.addEventListener('DOMContentLoaded', randomize)); 
 

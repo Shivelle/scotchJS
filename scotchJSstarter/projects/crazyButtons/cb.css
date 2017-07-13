@@ -1,5 +1,9 @@
 body {
 	padding: 50px;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23c3c0c3' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	overflow: hidden;
+
 }
 
 
@@ -12,33 +16,34 @@ body {
 	border-radius: 100%;
 	text-align: center;
 	transition: 0.4s ease all;
+	border: none;
 }
 
 .meh {
-	background: #F18805;
-	border: 1px solid #F18805;
+	background: #DFBE99;
 }
 
 .smile {
-	background: #EFCA08;
-	border: 1px solid #EFCA08;
+	background: #B5BD89;
 }
 
 .frowm {
-	background: #66D1EE;
-	border: 1px solid #66D1EE;
+	background: #EC9192;
 }
 
 .bomb {
-	background: #A40606;
-	border: 1px solid #A40606;
+	background: #DB5375;
 }
 
 .cloud {
-	background: #48B8D0;
-	border: 1px solid #48B8D0;
+	background: #729EA1;
 }
 
 i {
 	color: #fff;
+}
+
+#hover {
+	height: 80px;
+	width: 80px;
 }
