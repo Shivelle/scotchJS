@@ -1,0 +1,87 @@
+body {
+	background-color: #439775;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232a4747' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	padding: 50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited {
+	color: #fff;
+	background: #61D095;
+	padding: 2px 4px;
+	transition: all .3s ease-in-out;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	text-decoration: none;
+	background: #48BF84;
+}
+
+code {
+	color: #EE6352;
+}
+
+.content {
+	position: relative;
+	background: #fff;
+	padding: 50px; 
+	font-size: 19px;
+	line-height: 1.5; 
+	min-height: 3000px;
+	z-index: -1;
+}
+
+dt {
+	color: #EE6352;
+}
+
+h1, h2, h3 {
+	color: #48BF84;
+}
+
+h1 {
+	margin-bottom: 40px;
+	color: #EE6352;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+.scroll-line {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 16px;
+      background: #EE6352;
+      transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1.666) width;
+      z-index: 999;
+}
+
+.bye {
+	margin-top: 35px;
+	text-align: center;
+	color: #EE6352;
+}
+
+#again {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	color: #555;
+	float: right;
+	background: none;
+	transition: all .3s ease-in-out;
+}
+
+#again:hover {
+	color: #EE6352;
+}
